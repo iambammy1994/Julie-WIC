@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        WIC Coffee
+    </title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" type="text/css" href="/resources/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/resources/bootstrap-5.3.0-alpha1-dist/css/carousel.css">
+    <script src="/resources/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">WIC Coffee</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>View Membership Plans.</h1>
+                            <p>Check our membership plans to know what plan suites you best.</p>
+                            <p><a class="btn btn-lg btn-primary" href="Pricing.html">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Check out our merchandises!</h1>
+                            <p>Prepare our coffee at home using our tools that are sold thru our website.</p>
+                            <p><a class="btn btn-lg btn-primary" href="Pricing.html">Shop now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Want to know more?</h1>
+                            <p>Want to know more about us?</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <br />
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="/images/coffee.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Responsive image">
+                    <h2 class="fw-normal">Coffees</h2>
+                    <p>Indulge on our freshly made coffees.</p>
+                    <p><a class="btn btn-secondary" href="Pricing.html">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="/images/delivery.png" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Responsive image">
+                    <h2 class="fw-normal">Free Delivery</h2>
+                    <p>Enjoy coffee at home with our free delivery services within the city.</p>
+                    <p><a class="btn btn-secondary" href="Pricing.html">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="/images/merchandise.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Responsive image">
+                    <h2 class="fw-normal">Merchandise</h2>
+                    <p>Want to make coffee at home? Feel free to purchase on some of our merchandises to make our coffees yourself at home.</p>
+                    <p><a class="btn btn-secondary" href="Pricing.html">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Soothing Coffee. <span class="text-muted">It’ll blow your mind.</span></h2>
+                    <p class="lead">Try our freshly made coffees, guranteed fresh and the best ingredients.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="/images/coffee2.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Responsive image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">Try for yourself.</span></h2>
+                    <p class="lead">With many recommendations. You will be tempted to try our coffee.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="/images/coffee3.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Responsive image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Want to know more about Us? <span class="text-muted">Sure!</span></h2>
+                    <p class="lead">We provide excellent coffee thru delivery or walk-in thru our store. You can shop thru our website and have it delviered to your doorstep.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="/images/about.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Responsive image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2017–2022 WIC Coffee, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
